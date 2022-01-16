@@ -1,0 +1,32 @@
+{
+  "name": "magasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && node server",
+    "front": "cd frontend && npm start",
+    "back": "cd backend && nodemon server",
+    "dev": "concurrently \"npm run front\" \"npm run back\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/refkaguenichi/magasa_MERN.git"
+  },
+  "author": "Refka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/refkaguenichi/magasa_MERN/issues"
+  },
+  "homepage": "https://github.com/refkaguenichi/magasa_MERN#readme",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "browserify-remove-code": "^1.0.1",
+    "config": "3.3.1"
+  }
+}
